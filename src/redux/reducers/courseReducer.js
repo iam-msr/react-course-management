@@ -1,3 +1,4 @@
+//src/redux/reducers/courseReducer.js
 const initialState = [];
 
 const courseReducer = (state = initialState, action) => {

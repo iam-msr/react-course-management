@@ -1,3 +1,4 @@
+// src/redux/actions/courseActions.js
 export const loadCourses = (courses) => {
     return {
       type: 'LOAD_COURSES',
