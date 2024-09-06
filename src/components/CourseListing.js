@@ -12,7 +12,6 @@ const CourseListing = () => {
       .then(data => setCourses(data));
   }, []);
 
-  // Filter courses based on the search term
   const filteredCourses = courses.filter(course =>
     course.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     course.instructor.toLowerCase().includes(searchTerm.toLowerCase())
@@ -38,12 +37,17 @@ const CourseListing = () => {
           {filteredCourses.length === 0 ? (
             <p className="text-gray-700">No courses found</p>
           ) : (
-            <ul className="space-y-4">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-3">
               {filteredCourses.map(course => (
                 <li
                   key={course.id}
                   className="bg-white p-4 border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                 >
+                  <img 
+                    src={course.thumbnail} 
+                    alt={course.name} 
+                    className="w-full h-48 object-contain rounded-md mb-2"
+                  />
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">{course.name}</h3>
                   <p className="text-gray-600 mb-2">Instructor: {course.instructor}</p>
                   <Link

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { logoutUser } from '../redux/actions/authActions';
 
@@ -16,21 +16,30 @@ const Navbar = () => {
     <nav className="bg-gray-800 p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <ul className="flex space-x-4">
+          {/* Use NavLink for active link styling */}
           <li>
-            <Link
+            <NavLink
               to="/dashboard"
-              className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-white bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'
+                  : 'text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'
+              }
             >
               Dashboard
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/courses"
-              className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-white bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'
+                  : 'text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'
+              }
             >
               Courses
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <button
