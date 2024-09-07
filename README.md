@@ -70,11 +70,6 @@ The application provides a simulated course management experience with the follo
 **Logout** 
  - The user can log out using the Logout button in the navigation bar, which will redirect them back to the login screen. 
 
-- Additionally, the application uses Angular in-memory-web-api to simulate a data server. The in-memory-data.service.ts file contains the mock data for user authentication and organization details.
-- And, refreshing the page during the authentication process is not recommended, as it can lead to the loss of session data. To ensure that your session data is preserved and you can navigate smoothly between steps, use the provided buttons instead of refreshing the page or going back manually. This way, you can move back and forth through the authentication steps without losing any information.
-- If you signed up successfully, you will be redirected to the login page. You can use the same credentials to login in the same session.
-- The application is designed to be responsive and can be viewed on different screen sizes.
-
 **Mock Data:**
  - **Courses**: The list of courses, instructors, and details is stored in ``/src/mocks/data/courses.js``.
  - **Students**: Student profiles, including enrollment information and course progress, are stored in ``/src/mocks/data/students.js``.
