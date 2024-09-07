@@ -1,6 +1,5 @@
-// Data for the courses page-  src/mocks/data/courses.js
+//src/mocks/data/courses.js
 
-//Import the thumbnail images
 import courseId1 from '../../assets/thumbnails/courses/courseId1.jpg';
 import courseId2 from '../../assets/thumbnails/courses/courseId2.jpg';
 import courseId3 from '../../assets/thumbnails/courses/courseId3.jpg';
@@ -14,13 +13,13 @@ import courseId10 from '../../assets/thumbnails/courses/courseId10.jpg';
 
 export const courses = [
     {
-        id: 1, // Unique identifier for the course
+        id: 1, 
         name: 'Introduction to React Native',
-        instructor: 'John Doe', // Name of the course instructor
+        instructor: 'John Doe', 
         description: 'Learn the basics of React Native development and build your first mobile app.',
-        enrollmentStatus: 'Open', // Can be 'Open', 'Closed', or 'InProgress
-        thumbnail: courseId1, //Link to the course thumbnail
-        duration: '8 weeks', // Duration of the course
+        enrollmentStatus: 'Open', 
+        thumbnail: courseId1, // Image thumbnail for the course
+        duration: '8 weeks', 
         schedule: 'Tuesdays and Thursdays, 6:00 PM - 8:00 PM',
         location: 'Online',
         prerequisites: ['Basic JavaScript knowledge', 'Familiarity with React'],
@@ -66,14 +65,14 @@ export const courses = [
                 content: 'Building and deploying your app to the App Store and Google Play.'
             }
         ],
-        studentsEnrolled: ['1', '2', '4', '5'],
+        studentsEnrolled: ['1', '2'],
     },
     {
         id: 2,
         name: 'Advanced React Development',
         instructor: 'Jane Smith',
         description: 'Take your React skills to the next level with this advanced course.',
-        enrollmentStatus: 'Open',
+        enrollmentStatus: 'Closed',
         thumbnail: courseId2,
         duration: '12 weeks',
         schedule: 'Mondays and Wednesdays, 6:00 PM - 8:00 PM',
@@ -141,14 +140,14 @@ export const courses = [
                 content: 'Building a complete React application from scratch.'
             }
         ],
-        studentsEnrolled: ['1', '3', '4'],
+        studentsEnrolled: [],
     },
     {
         id: 3,
         name: 'Python for Beginners',
         instructor: 'Alice Johnson',
         description: 'An introductory course to Python programming. Ideal for those new to coding.',
-        enrollmentStatus: 'Open',
+        enrollmentStatus: 'In Progress',
         thumbnail: courseId3,
         duration: '6 weeks',
         schedule: 'Mondays and Wednesdays, 5:00 PM - 7:00 PM',
@@ -162,7 +161,7 @@ export const courses = [
             { week: 5, topic: 'File Handling', content: 'Reading from and writing to files.' },
             { week: 6, topic: 'Project Work', content: 'Building a small project using Python.' }
         ],
-        studentsEnrolled: [],
+        studentsEnrolled: ['1', '2'],
     },
     {
         id: 4,
@@ -185,7 +184,7 @@ export const courses = [
             { week: 7, topic: 'Forms and Validation', content: 'Working with forms and validation in Angular.' },
             { week: 8, topic: 'Deployment', content: 'Building and deploying an Angular application.' }
         ],
-        studentsEnrolled: [],
+        studentsEnrolled: ['1','2'],
     },
     {
         id: 5,
@@ -196,7 +195,7 @@ export const courses = [
         thumbnail: courseId5,
         duration: '10 weeks',
         schedule: 'Mondays and Fridays, 6:00 PM - 8:00 PM',
-        location: 'Online',
+        location: 'In Progress',
         prerequisites: ['Basic JavaScript knowledge'],
         syllabus: [
             { week: 1, topic: 'Introduction to Node.js', content: 'Understanding the basics of Node.js and setting up your environment.' },
@@ -210,7 +209,7 @@ export const courses = [
             { week: 9, topic: 'Testing Node.js Applications', content: 'Writing tests for Node.js applications.' },
             { week: 10, topic: 'Deployment and Scaling', content: 'Deploying and scaling your Node.js applications.' }
         ],
-        studentsEnrolled: [],
+        studentsEnrolled: ['1','3'],
     },
     {
         id: 6,
@@ -233,7 +232,7 @@ export const courses = [
             { week: 7, topic: 'User Authentication', content: 'Implementing user authentication and authorization.' },
             { week: 8, topic: 'Deployment', content: 'Deploying a Django application to a web server.' }
         ],
-        studentsEnrolled: [],
+        studentsEnrolled: ['1','3'],
     },
     {
         id: 7,
@@ -255,7 +254,7 @@ export const courses = [
             { week: 6, topic: 'REST APIs with Flask', content: 'Building RESTful APIs using Flask.' },
             { week: 7, topic: 'Deployment', content: 'Deploying Flask applications to a web server.' }
         ],
-        studentsEnrolled: [],
+        studentsEnrolled: ['1','2'],
     },
     {
         id: 8,
@@ -276,14 +275,14 @@ export const courses = [
             { week: 5, topic: 'Storage and Volumes', content: 'Managing storage and volumes in Kubernetes.' },
             { week: 6, topic: 'Monitoring and Troubleshooting', content: 'Monitoring and troubleshooting Kubernetes clusters and applications.' }
         ],
-        studentsEnrolled: [],
+        studentsEnrolled: ['1','2'],
     },
     {
         id: 9,
         name: 'AWS Cloud Fundamentals',
         instructor: 'Jack Green',
         description: 'Get started with Amazon Web Services (AWS) and learn to deploy and manage applications in the cloud.',
-        enrollmentStatus: 'Open',
+        enrollmentStatus: 'In Progress',
         thumbnail: courseId9,
         duration: '7 weeks',
         schedule: 'Tuesdays and Thursdays, 6:00 PM - 8:00 PM',
@@ -298,7 +297,7 @@ export const courses = [
             { week: 6, topic: 'Deployment and Automation', content: 'Deploying applications and automating workflows with AWS.' },
             { week: 7, topic: 'Monitoring and Cost Management', content: 'Monitoring AWS resources and managing costs.' }
         ],
-        studentsEnrolled: [],
+        studentsEnrolled: ['1','3'],
     },
     {
         id: 10,
@@ -323,6 +322,6 @@ export const courses = [
             { week: 9, topic: 'JavaScript with Web APIs', content: 'Working with web APIs and integrating them with JavaScript.' },
             { week: 10, topic: 'Final Project', content: 'Building a complex JavaScript application as a final project.' }
         ],
-        studentsEnrolled: [],
+        studentsEnrolled: ['1','3'],
     }
 ];
